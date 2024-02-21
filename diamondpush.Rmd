@@ -1,0 +1,22 @@
+---
+title: "diamond push"
+author: "Yen Chun Lin"
+date: "2024-02-20"
+output: html_document
+---
+
+```{r}
+# Diamonds
+library(tidyverse)
+head(diamonds)
+
+# Use dplyr commands to create a diamond data table
+# that shows columns price x,y, and z. Also price values should be greater than 17000.
+library(dplyr)
+diamonds%>%
+  select(price,x,y,z)%>%
+  filter(price>17000)
+```
+
+
+
